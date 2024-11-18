@@ -1,5 +1,4 @@
 import { StoreProvider } from "easy-peasy";
-import { ThemeProvider } from "./components/theme/theme-provider";
 import { Toaster } from "./components/ui/sonner";
 import store from "./store/store";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -12,13 +11,9 @@ export default function GlobalLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <StoreProvider store={store}>
-        <QueryClientProvider client={queryClient}>
-          {children}
-        </QueryClientProvider>
-        <Toaster />
-      </StoreProvider>
-    </ThemeProvider>
+    <StoreProvider store={store}>
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+      <Toaster />
+    </StoreProvider>
   );
 }

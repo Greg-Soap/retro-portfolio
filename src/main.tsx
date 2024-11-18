@@ -3,17 +3,12 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Root from "@/pages/root";
-import About from "@/pages/about";
 import GlobalLayout from "./layout";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-  },
-  {
-    path: "/about",
-    element: <About />,
   },
 ]);
 

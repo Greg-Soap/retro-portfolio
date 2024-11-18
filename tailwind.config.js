@@ -52,8 +52,8 @@ export default {
         },
       },
       fontFamily: {
-        heading: ['SUSE', 'system-ui', 'sans-serif'],
-        secondary: ['Montserrat', 'system-ui', 'sans-serif'],
+        heading: ['Recia-Variable', 'serif'],
+        sans: ['Instrument Sans', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         'accordion-down': {
@@ -118,6 +118,13 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         marquee: 'marquee var(--duration) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+      },
+      container: {
+        center: true,
+        padding: '100px',
+        screens: {
+          '2xl': '1280px',
+        },
       },
     },
   },
