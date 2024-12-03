@@ -48,7 +48,7 @@ const services: Service[] = [
 export default function ServicesGrid() {
   return (
     <section className='bg-[#F2F0FF] pb-24'>
-      <div className='container mx-auto'>
+      <div className='container mx-auto md:px-[100px]'>
         <div className='flex flex-col gap-6'>
           {Array.from({ length: services.length / 2 }, (_, i) => (
             // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
@@ -82,8 +82,12 @@ export default function ServicesGrid() {
 
                       {/* Content */}
                       <div className='flex flex-col '>
-                        <h3 className='text-xl font-bold mb-3 text-black'>{service.title}</h3>
-                        <p className='text-black text-lg !leading-tight'>{service.description}</p>
+                        <h3 className='text-base md:text-xl font-bold mb-3 text-black'>
+                          {service.title}
+                        </h3>
+                        <p className='text-black text-base md:text-lg !leading-tight'>
+                          {service.description}
+                        </p>
                       </div>
                     </div>
                   </div>

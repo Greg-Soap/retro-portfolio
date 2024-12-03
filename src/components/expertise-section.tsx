@@ -2,8 +2,8 @@ import Heading from '@/layout/heading'
 
 export default function ExpertiseSection() {
   return (
-    <section className='bg-[#F2F0FF] py-24 pb-12'>
-      <div className='container mx-auto'>
+    <section className='bg-[#F2F0FF] py-24 pb-12' id='what-we-do'>
+      <div className='container mx-auto md:px-[100px]'>
         <Heading className='!text-black !tracking-normal'>
           Innovative digital solutions tailored to amplify your brand and connect with your
           audience.

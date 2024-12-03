@@ -17,9 +17,9 @@ const processSteps: ProcessStep[] = [
 
 export default function ProcessSection() {
   return (
-    <section className='bg-black text-white py-24 w-full' id='process'>
-      <div className='container mx-auto'>
-        <div className='flex flex-col md:flex-row gap-[56px] items-start pb-6 md:pb-12   '>
+    <section className='bg-black text-white py-12 md:py-24 w-full' id='who-we-are'>
+      <div className='container mx-auto md:px-[100px]'>
+        <div className='flex flex-col md:flex-row gap-4 md:gap-[56px] items-start pb-6 md:pb-12   '>
           {/* Left Column */}
           <div className='max-w-[512px] w-full'>
             <Heading className='!text-white !tracking-normal'>
@@ -38,7 +38,7 @@ export default function ProcessSection() {
           </div>
         </div>
         {/* Process Steps Grid */}
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-8 pb-10  sm:pb-20 md:pb-40'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 pb-10  sm:pb-20 md:pb-40'>
           {processSteps.map((step) => (
             <BorderFrame color='white' key={step.title}>
               <div className='w-[238px] h-[238px] flex flex-col items-center justify-center'>
@@ -50,7 +50,7 @@ export default function ProcessSection() {
         </div>
 
         {/* Bottom Text and CTA */}
-        <div className='max-w-[800px] mx-auto mt-16 space-y-8'>
+        <div className='max-w-[800px] mx-auto  md:mt-16 space-y-8'>
           <p className='text-lg md:text-2xl text-[#F9F8FF]'>
             Our story is simple: we are a team of passionate creators driven to build remarkable
             digital solutions. We blend artistry with technology, crafting seamless, user-focused

@@ -118,10 +118,11 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         marquee: 'marquee var(--duration) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+        'spin-slow': 'spin 3s linear infinite',
       },
       container: {
         center: true,
-        padding: '100px',
+        padding: '16px',
         screens: {
           '2xl': '1280px',
         },

@@ -6,8 +6,8 @@ import BorderFrame from './border-frame'
 
 export default function Ready() {
   return (
-    <section className='bg-[#F2F0FF] py-16 md:py-24'>
-      <div className='container mx-auto'>
+    <section className='bg-[#F2F0FF] py-16 md:py-24' id='contact'>
+      <div className='container mx-auto md:px-[100px]'>
         <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
           <h2 className='text-4xl md:text-8xl font-bold text-black max-w-[680px] !leading-normal'>
             Ready to work with us?

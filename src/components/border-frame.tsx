@@ -11,19 +11,19 @@ function BorderFrame({ children, className = '', color = 'black' }: BorderFrameP
       style={{ borderColor: color === 'black' ? '#000' : '#F9F8FF' }}>
       {/* Corner Boxes */}
       <div
-        className={`absolute -left-1 -top-1 h-[6px] w-[6px] bg-[#4A3880] border-${color} border`}
+        className={`absolute -left-1 -top-1 h-[6px] w-[6px] bg-[#4A3880] border-${color} border animate-spin-slow`}
         style={{ borderColor: color === 'black' ? '#000' : '#F9F8FF' }}
       />
       <div
-        className={`absolute -right-1 -top-1 h-[6px] w-[6px] bg-[#4A3880] border-${color} border`}
+        className={`absolute -right-1 -top-1 h-[6px] w-[6px] bg-[#4A3880] border-${color} border animate-spin-slow`}
         style={{ borderColor: color === 'black' ? '#000' : '#F9F8FF' }}
       />
       <div
-        className={`absolute -bottom-1 -left-1 h-[6px] w-[6px] bg-[#4A3880] border-${color} border`}
+        className={`absolute -bottom-1 -left-1 h-[6px] w-[6px] bg-[#4A3880] border-${color} border animate-spin-slow`}
         style={{ borderColor: color === 'black' ? '#000' : '#F9F8FF' }}
       />
       <div
-        className={`absolute -bottom-1 -right-1 h-[6px] w-[6px] bg-[#4A3880] border-${color} border`}
+        className={`absolute -bottom-1 -right-1 h-[6px] w-[6px] bg-[#4A3880] border-${color} border animate-spin-slow`}
         style={{ borderColor: color === 'black' ? '#000' : '#F9F8FF' }}
       />
 
